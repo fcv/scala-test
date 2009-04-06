@@ -1,0 +1,6 @@
+## see: http://www.selenic.com/mercurial/hgignore.5.html
+
+# use glob syntax.
+syntax: glob
+
+./bin
