@@ -26,12 +26,16 @@ object Fake extends Application {
   
   import collection.mutable.ArrayStack;
   var stack = new ArrayStack[Int];
+  
   stack ++= List(1,2,3,4,5)
   println;
   println( stack );
-  stack reduceWith {(a, b) => a+b} 
+  stack reduceWith (_*_) //-- weird!! =P
   
-  println( stack );
+  println("stack = " + stack );
   
+  println ( List(-3,-2,-1,0,1,2,3,4,5,6,7,8,9,10) filter ( _ % 2 == 0 ) )
+  
+   
 }
 
