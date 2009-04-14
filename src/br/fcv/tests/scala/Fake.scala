@@ -13,6 +13,7 @@ object Fake extends Application {
   
   get foreach { a => println(a.getCanonicalPath()) } 
     // {  println(_) }
+    // get foreach println _ 
     
   import java.lang.Integer;
   
