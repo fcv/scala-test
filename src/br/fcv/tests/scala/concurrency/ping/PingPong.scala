@@ -52,8 +52,22 @@ object PingPong extends Application {
   }
 
   val pong = new Pong
-  val ping = new Ping(100000, pong)
+  val ping = new Ping(5000, pong)
 
   ping.start
   pong.start
+  
+  // prints: 
+  //  [Thread-1] Pong: ping 0
+  //  [Thread-2] Ping: pong
+  //  [Thread-1] Pong: ping 1000
+  //  [Thread-2] Ping: pong
+  //  [Thread-1] Pong: ping 2000
+  //  [Thread-2] Ping: pong
+  //  [Thread-1] Pong: ping 3000
+  //  [Thread-2] Ping: pong
+  //  [Thread-1] Pong: ping 4000
+  //  [Thread-2] Ping: pong
+  //  [Thread-2] Ping: stop
+  //  [Thread-1] Pong: stop
 }
