@@ -28,7 +28,7 @@ object BooleanMonkeyPatching extends Application {
   
   println("before ternary operator")
   
-  var str = x ? yes | no 
+  var str = x ? yes | ("")
   
   println ("result of ternary operator: " + str)
 

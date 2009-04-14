@@ -11,7 +11,7 @@ object Fake extends Application {
       yield file
   }
   
-  get foreach { println(_) }
+  get foreach println _ 
     
 
 }
