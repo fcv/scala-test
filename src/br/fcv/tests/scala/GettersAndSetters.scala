@@ -11,7 +11,7 @@ object GettersAndSetters extends Application {
     }
     
     // note: 
-    // no space between "name_" and "=" is allowed
+    // no space between "name_" and "=" is allowed since 'name_=' is the very method's name
     // neither "name_(xxx: String) = {..." 
     def name_= (name: String) {
       println("[log] setting new name")
