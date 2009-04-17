@@ -39,8 +39,14 @@ object Email extends Application {
   
   printEmailFields("genesio@server.com.br")
   printEmailFields("someordinarystring")
+  //-- prints:
+  // user: genesio, domain: server.com.br
+  // 'someordinarystring' is a valid email
   
   println
   
-  List("genesio@server.com.br", "invalidemail", "user@notbrserver.com", "baltazar@anotherserver.com.br") foreach printUsersFromBrServers _  
+  List("genesio@server.com.br", "invalidemail", "user@notbrserver.com", "baltazar@anotherserver.com.br") foreach printUsersFromBrServers _
+  //-- prints:
+  // genesio@server.com.br
+  // baltazar@anotherserver.com.br
 }
