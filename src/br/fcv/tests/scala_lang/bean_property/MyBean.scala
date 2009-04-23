@@ -1,4 +1,4 @@
-package br.fcv.tests.scala.bean_property
+package br.fcv.tests.scala_lang.bean_property
 
 import _root_.scala.reflect.{BeanProperty => Prop}
 import java.util.Date

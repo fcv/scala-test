@@ -1,4 +1,4 @@
-package br.fcv.tests.scala.concurrency
+package br.fcv.tests.scala_lang.concurrency
 
 import actors.Actor
 import Actor._

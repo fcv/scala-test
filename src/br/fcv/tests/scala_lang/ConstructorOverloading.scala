@@ -1,4 +1,4 @@
-package br.fcv.tests.scala
+package br.fcv.tests.scala_lang
 
 object ConstructorOverloading extends Application {
 

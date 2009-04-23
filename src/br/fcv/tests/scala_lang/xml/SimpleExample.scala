@@ -1,4 +1,4 @@
-package br.fcv.tests.scala.xml
+package br.fcv.tests.scala_lang.xml
 
 import _root_.scala.xml.NodeSeq.Empty
 

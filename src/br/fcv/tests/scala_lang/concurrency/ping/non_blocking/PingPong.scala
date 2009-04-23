@@ -1,4 +1,4 @@
-package br.fcv.tests.scala.concurrency.ping.non_blocking
+package br.fcv.tests.scala_lang.concurrency.ping.non_blocking
 
 import actors.Actor
 import Actor._

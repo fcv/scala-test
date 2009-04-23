@@ -1,4 +1,4 @@
-package br.fcv.tests.scala.extractors
+package br.fcv.tests.scala_lang.extractors
 
 /**
  * Example of Extractors with regular expression usage 
