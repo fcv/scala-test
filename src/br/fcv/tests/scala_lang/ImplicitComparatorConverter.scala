@@ -16,7 +16,7 @@ object ImplicitComparatorConverter extends Application {
   list.addAll( Arrays.asList(Holder(8), Holder(1), Holder(3), Holder(2), Holder(7)) )
   
   /**
-   * Converts a function of type (T,T) => Boolean into Comparator[T] 
+   * Converts a function of type (T,T) => Int into Comparator[T] 
    */
   implicit def closure2comparator[T](func: (T, T) => Int):Comparator[T] = new Comparator[T]() {
     def compare(a:T, b:T):Int = {
@@ -27,7 +27,7 @@ object ImplicitComparatorConverter extends Application {
   val comp:Comparator[Holder] = (x:Holder, y:Holder) => { y.i - x.i }
   
   Collections.sort(list, comp) //-- using pre defined instance
-  Collections.sort(list, (x:Holder, y:Holder) => { y.hashCode - x.hashCode }) //-- "inline" declaration
+  Collections.sort(list, (x:Holder, y:Holder) => { y.i - x.i }) //-- "inline" declaration
   
   val objComp: Comparator[Object] = null
   // Collections.sort(ints, objComp) <-- compiler error
