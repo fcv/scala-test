@@ -11,14 +11,15 @@ object LazyParams extends Application {
     println("a eq b: " + (a eq b))
   } 
   
-  def callByName(param: => Obj) {
+  def callByName(param: => Obj) = {
     val a = param;
     val b = param;
     println("a eq b: " + (a eq b))
   }
 
-  def callByNameLazilly(param: => Obj) {
+  def callByNameLazilly(param: => Obj) = {
     lazy val y = param;  
+    println("y.getClass: " + y.getClass )
     val a = y;
     val b = y;
     println("a eq b: " + (a eq b))
